@@ -732,6 +732,7 @@ footer{
 .loyalty-btn:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 12px 40px rgba(124,58,237,.4)}
 .loyalty-label{display:none;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a78bfa;text-align:center;margin-top:8px;font-family:'Syne',sans-serif}
 </style>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </head>
 <body>
 
@@ -997,7 +998,7 @@ footer{
       </div>
       <div class="contact-form-wrap">
         <div id="contact-form-inner">
-          <form id="contact-form" action="https://formspree.io/f/bookings@propai-bookings.art" method="POST" onsubmit="handleContactSubmit(event)">
+          <form id="contact-form" action="https://formspree.io/f/mwvyzvjl" method="POST" onsubmit="handleContactSubmit(event)">
             <input type="hidden" name="_replyto" value="bookings@propai-bookings.art"/>
             <input type="hidden" name="_subject" value="New Inquiry — Veloce Automations"/>
             <div class="form-row">
@@ -1316,7 +1317,7 @@ async function handleContactSubmit(e) {
   const data = new FormData(form);
   data.append('_replyto', EMAIL);
   try {
-    const res = await fetch('https://formspree.io/f/xpwzwqjd', {
+    const res = await fetch('https://formspree.io/f/mwvyzvjl', {
       method: 'POST', body: data, headers: { 'Accept': 'application/json' }
     });
     if (res.ok) {
@@ -1351,7 +1352,7 @@ async function handleDemoSubmit(e) {
   const data = new FormData(form);
   data.append('_replyto', EMAIL);
   try {
-    const res = await fetch('https://formspree.io/f/xpwzwqjd', {
+    const res = await fetch('https://formspree.io/f/mwvyzvjl', {
       method: 'POST', body: data, headers: { 'Accept': 'application/json' }
     });
     if (res.ok) {
